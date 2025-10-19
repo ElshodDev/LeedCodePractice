@@ -16,5 +16,10 @@ public class Program
         string converted3 = zigzag.Convert("A", 1);
         Console.WriteLine($"The converted string is: {converted3}");
 
+
+        StringBuilderForPractice sbPractice = new StringBuilderForPractice();
+        sbPractice.AppendExample("Salom");
+        sbPractice.AppendExample("Dunyo");
+
     }
 }
