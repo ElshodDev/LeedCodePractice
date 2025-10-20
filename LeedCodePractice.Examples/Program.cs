@@ -21,5 +21,11 @@ public class Program
         sbPractice.AppendExample("Salom");
         sbPractice.AppendExample("Dunyo");
 
+
+        ReverseWordsInString reverseWordsInString = new ReverseWordsInString();
+        string reversed = reverseWordsInString.ReverseWords("  Hello   World  ");
+        Console.WriteLine($"Reversed words: '{reversed}'");
+        string reversed2 = reverseWordsInString.ReverseWords("a good   example");
+        Console.WriteLine($"Reversed words: '{reversed2}'");
     }
 }
