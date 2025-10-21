@@ -27,5 +27,14 @@ public class Program
         Console.WriteLine($"Reversed words: '{reversed}'");
         string reversed2 = reverseWordsInString.ReverseWords("a good   example");
         Console.WriteLine($"Reversed words: '{reversed2}'");
+
+
+        GroupAnagrams groupAnagrams = new GroupAnagrams();
+        var anagrams = groupAnagrams.GroupAnagramsMethod(new string[] { "eat", "tea", "tan", "ate", "nat", "bat" });
+        Console.WriteLine("Grouped Anagrams:");
+        foreach (var group in anagrams)
+        {
+            Console.WriteLine($"[{string.Join(", ", group)}]");
+        }
     }
 }
