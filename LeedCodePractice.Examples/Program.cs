@@ -27,5 +27,12 @@ public class Program
         Console.WriteLine($"Reversed words: '{reversed}'");
         string reversed2 = reverseWordsInString.ReverseWords("a good   example");
         Console.WriteLine($"Reversed words: '{reversed2}'");
+
+
+      ValidPalindrome validPalindrome = new ValidPalindrome();
+        bool isPalindrome = validPalindrome.IsPalindrome("A man, a plan, a canal: Panama");
+        Console.WriteLine($"Is palindrome: {isPalindrome}");
+        bool isPalindrome2 = validPalindrome.IsPalindrome("wdqqwdqdqdqd");
+        Console.WriteLine($"Is Palindrome: {isPalindrome2}");
     }
 }
