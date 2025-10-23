@@ -29,6 +29,12 @@ public class Program
         Console.WriteLine($"Reversed words: '{reversed2}'");
 
 
+
+      ValidPalindrome validPalindrome = new ValidPalindrome();
+        bool isPalindrome = validPalindrome.IsPalindrome("A man, a plan, a canal: Panama");
+        Console.WriteLine($"Is palindrome: {isPalindrome}");
+        bool isPalindrome2 = validPalindrome.IsPalindrome("wdqqwdqdqdqd");
+        Console.WriteLine($"Is Palindrome: {isPalindrome2}");
         GroupAnagrams groupAnagrams = new GroupAnagrams();
         var anagrams = groupAnagrams.GroupAnagramsMethod(new string[] { "eat", "tea", "tan", "ate", "nat", "bat" });
         Console.WriteLine("Grouped Anagrams:");
