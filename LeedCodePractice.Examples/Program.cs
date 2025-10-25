@@ -42,5 +42,20 @@ public class Program
         {
             Console.WriteLine($"[{string.Join(", ", group)}]");
         }
+
+
+        palindrome_number.palindrom palindromChecker = new palindrome_number.palindrom();
+        bool isNumberPalindrome = palindromChecker.IsPalindrome(121);
+        Console.WriteLine($"Is number palindrome: {isNumberPalindrome}");
+        bool isNumberPalindrome2 = palindromChecker.IsPalindrome(-121);
+        Console.WriteLine($"Is number palindrome: {isNumberPalindrome2}");
+        bool isNumberPalindrome3 = palindromChecker.IsPalindrome(10);
+        Console.WriteLine($"Is number palindrome: {isNumberPalindrome3}");
+
+        palindrome_number.palindrome2 palindromChecker2 = new palindrome_number.palindrome2();
+        bool isNumberPalindrome4 = palindromChecker2.IsPalindrome(12321);
+        Console.WriteLine($"Is number palindrome: {isNumberPalindrome4}");
+        bool isNumberPalindrome5 = palindromChecker2.IsPalindrome(-12321);
+        Console.WriteLine($"Is number palindrome: {isNumberPalindrome5}");
     }
 }
