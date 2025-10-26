@@ -57,5 +57,15 @@ public class Program
         Console.WriteLine($"Is number palindrome: {isNumberPalindrome4}");
         bool isNumberPalindrome5 = palindromChecker2.IsPalindrome(-12321);
         Console.WriteLine($"Is number palindrome: {isNumberPalindrome5}");
+
+
+
+        Sum.Sum sumCalculator = new Sum.Sum();
+        var triplets = sumCalculator.ThreeSum(new int[] { -1, 0, 1, 2, -1, -4 });
+        Console.WriteLine("Triplets that sum to zero:");
+        foreach (var triplet in triplets)
+        {
+            Console.WriteLine($"[{string.Join(", ", triplet)}]");
+        }
     }
 }
