@@ -67,5 +67,15 @@ public class Program
         {
             Console.WriteLine($"[{string.Join(", ", triplet)}]");
         }
+
+
+
+       Valid_Parentheses.ValidParentheses validParentheses = new Valid_Parentheses.ValidParentheses();
+        bool isValid1 = validParentheses.IsValid("()");
+        Console.WriteLine($"Is valid parentheses '()': {isValid1}");
+        bool isValid2 = validParentheses.IsValid("()[]{}");
+        Console.WriteLine($"Is valid parentheses '()[]{{}}': {isValid2}");
+        bool isValid3 = validParentheses.IsValid("(]");
+        Console.WriteLine($"Is valid parentheses '(]': {isValid3}");
     }
 }
