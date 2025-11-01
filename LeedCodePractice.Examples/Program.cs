@@ -77,5 +77,10 @@ public class Program
         Console.WriteLine($"Is valid parentheses '()[]{{}}': {isValid2}");
         bool isValid3 = validParentheses.IsValid("(]");
         Console.WriteLine($"Is valid parentheses '(]': {isValid3}");
+
+
+        TwoSum.TwoSum twoSumSolver = new TwoSum.TwoSum();
+        int[] result = twoSumSolver.FindTwoSum(new int[] { 2, 6, 7, 15 },21);
+        Console.WriteLine($"Indices of the two numbers that add up to the target: [{string.Join(", ", result)}]");
     }
 }
