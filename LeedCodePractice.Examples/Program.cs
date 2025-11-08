@@ -30,7 +30,7 @@ public class Program
 
 
 
-      ValidPalindrome validPalindrome = new ValidPalindrome();
+        ValidPalindrome validPalindrome = new ValidPalindrome();
         bool isPalindrome = validPalindrome.IsPalindrome("A man, a plan, a canal: Panama");
         Console.WriteLine($"Is palindrome: {isPalindrome}");
         bool isPalindrome2 = validPalindrome.IsPalindrome("wdqqwdqdqdqd");
@@ -70,7 +70,7 @@ public class Program
 
 
 
-       Valid_Parentheses.ValidParentheses validParentheses = new Valid_Parentheses.ValidParentheses();
+        Valid_Parentheses.ValidParentheses validParentheses = new Valid_Parentheses.ValidParentheses();
         bool isValid1 = validParentheses.IsValid("()");
         Console.WriteLine($"Is valid parentheses '()': {isValid1}");
         bool isValid2 = validParentheses.IsValid("()[]{}");
@@ -80,7 +80,14 @@ public class Program
 
 
         TwoSum.TwoSum twoSumSolver = new TwoSum.TwoSum();
-        int[] result = twoSumSolver.FindTwoSum(new int[] { 2, 6, 7, 15 },21);
+        int[] result = twoSumSolver.FindTwoSum(new int[] { 2, 6, 7, 15 }, 21);
         Console.WriteLine($"Indices of the two numbers that add up to the target: [{string.Join(", ", result)}]");
+
+        
+        SearchInsertPosition.SearchInsertPos searchInsertPos = new SearchInsertPosition.SearchInsertPos();
+        int insertIndex = searchInsertPos.SearchInsertPosition(new int[] { 1, 3, 5, 6 }, 5);
+        Console.WriteLine($"Index to insert the target: {insertIndex}");
+
+
     }
 }
