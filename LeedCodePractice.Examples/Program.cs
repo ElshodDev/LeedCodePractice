@@ -89,5 +89,9 @@ public class Program
         Console.WriteLine($"Index to insert the target: {insertIndex}");
 
 
+        Multiply_Strings.MultiplyStrings multiplyStrings = new Multiply_Strings.MultiplyStrings();
+        string product0 = multiplyStrings.Multiply("2", "3");
+        string product = multiplyStrings.Multiply("123", "456");
+        Console.WriteLine($"Product of the two numbers:{product0}, {product}");
     }
 }
