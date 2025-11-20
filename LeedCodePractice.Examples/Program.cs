@@ -1,4 +1,6 @@
-﻿namespace LeedCodePractice.Examples;
+﻿using LeedCodePractice.Examples.LengthOfLastWords;
+
+namespace LeedCodePractice.Examples;
 
 public class Program
 {
@@ -93,5 +95,10 @@ public class Program
         string product0 = multiplyStrings.Multiply("2", "3");
         string product = multiplyStrings.Multiply("123", "456");
         Console.WriteLine($"Product of the two numbers:{product0}, {product}");
+
+
+        LengthOfLastWords.LengthOfLastWord lengthOfLastWord = new LengthOfLastWords.LengthOfLastWord();
+        int lastWordLength = lengthOfLastWord.LengthOfLastWordMethod("Hello World");
+        Console.WriteLine($"Length of the last word: {lastWordLength}");
     }
 }
