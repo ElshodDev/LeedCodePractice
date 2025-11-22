@@ -1,6 +1,4 @@
-﻿using LeedCodePractice.Examples.LengthOfLastWords;
-
-namespace LeedCodePractice.Examples;
+﻿namespace LeedCodePractice.Examples;
 
 public class Program
 {
@@ -85,7 +83,7 @@ public class Program
         int[] result = twoSumSolver.FindTwoSum(new int[] { 2, 6, 7, 15 }, 21);
         Console.WriteLine($"Indices of the two numbers that add up to the target: [{string.Join(", ", result)}]");
 
-        
+
         SearchInsertPosition.SearchInsertPos searchInsertPos = new SearchInsertPosition.SearchInsertPos();
         int insertIndex = searchInsertPos.SearchInsertPosition(new int[] { 1, 3, 5, 6 }, 5);
         Console.WriteLine($"Index to insert the target: {insertIndex}");
@@ -100,5 +98,11 @@ public class Program
         LengthOfLastWords.LengthOfLastWord lengthOfLastWord = new LengthOfLastWords.LengthOfLastWord();
         int lastWordLength = lengthOfLastWord.LengthOfLastWordMethod("Hello World");
         Console.WriteLine($"Length of the last word: {lastWordLength}");
+
+        MergeSortedArray.MergeSortedArray mergeSortedArrays = new MergeSortedArray.MergeSortedArray();
+        int[] nums1 = new int[] { 1, 2, 3, 0, 0, 0 };
+        int[] nums2 = new int[] { 2, 5, 6 };
+        mergeSortedArrays.Merge(nums1, 0, nums2, 1);
+        Console.WriteLine($"Merged array: [{string.Join(", ", nums1)}]");
     }
 }
