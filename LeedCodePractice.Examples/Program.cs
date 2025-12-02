@@ -1,4 +1,6 @@
-﻿namespace LeedCodePractice.Examples;
+﻿using LeedCodePractice.Examples.Same_Trees;
+
+namespace LeedCodePractice.Examples;
 
 public class Program
 {
@@ -104,5 +106,20 @@ public class Program
         int[] nums2 = new int[] { 2, 5, 6 };
         mergeSortedArrays.Merge(nums1, 0, nums2, 1);
         Console.WriteLine($"Merged array: [{string.Join(", ", nums1)}]");
+
+
+        Same_Tree sameTreeChecker = new Same_Tree();
+        var tree1 = new Same_Tree.TreeNode(1)
+        {
+            left = new Same_Tree.TreeNode(6),
+            right = new Same_Tree.TreeNode(3)
+        };
+        var tree2 = new Same_Tree.TreeNode(1)
+        {
+            left = new Same_Tree.TreeNode(2),
+            right = new Same_Tree.TreeNode(3)
+        };
+        bool areSameTrees = sameTreeChecker.IsSameTree(tree1, tree2);
+        Console.WriteLine($"Are the two trees the same? {areSameTrees}");
     }
 }
