@@ -121,5 +121,28 @@ public class Program
         };
         bool areSameTrees = sameTreeChecker.IsSameTree(tree1, tree2);
         Console.WriteLine($"Are the two trees the same? {areSameTrees}");
+
+        remove_duplicates_from_sorted_lists.remove_duplicates_from_sorted_list removeDuplicates = new remove_duplicates_from_sorted_lists.remove_duplicates_from_sorted_list();
+        var head = new remove_duplicates_from_sorted_lists.ListNode(1)
+        {
+            next = new remove_duplicates_from_sorted_lists.ListNode(1)
+            {
+                next = new remove_duplicates_from_sorted_lists.ListNode(2)
+                {
+                    next = new remove_duplicates_from_sorted_lists.ListNode(3)
+                    {
+                        next = new remove_duplicates_from_sorted_lists.ListNode(3)
+                    }
+                }
+            }
+        };
+        var updatedHead = removeDuplicates.DeleteDuplicates(head);
+        Console.Write("List after removing duplicates: ");
+        while (updatedHead != null)
+        {
+            Console.Write(updatedHead.val + " ");
+            updatedHead = updatedHead.next;
+        }
+        Console.WriteLine(head);
     }
 }
